@@ -1,0 +1,12 @@
+/Users/caziz/Desktop/demo/Reactivities/Domain/bin/Debug/net7.0/Domain.deps.json
+/Users/caziz/Desktop/demo/Reactivities/Domain/bin/Debug/net7.0/Domain.dll
+/Users/caziz/Desktop/demo/Reactivities/Domain/bin/Debug/net7.0/Domain.pdb
+/Users/caziz/Desktop/demo/Reactivities/Domain/obj/Debug/net7.0/Domain.csproj.AssemblyReference.cache
+/Users/caziz/Desktop/demo/Reactivities/Domain/obj/Debug/net7.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/caziz/Desktop/demo/Reactivities/Domain/obj/Debug/net7.0/Domain.AssemblyInfoInputs.cache
+/Users/caziz/Desktop/demo/Reactivities/Domain/obj/Debug/net7.0/Domain.AssemblyInfo.cs
+/Users/caziz/Desktop/demo/Reactivities/Domain/obj/Debug/net7.0/Domain.csproj.CoreCompileInputs.cache
+/Users/caziz/Desktop/demo/Reactivities/Domain/obj/Debug/net7.0/Domain.dll
+/Users/caziz/Desktop/demo/Reactivities/Domain/obj/Debug/net7.0/refint/Domain.dll
+/Users/caziz/Desktop/demo/Reactivities/Domain/obj/Debug/net7.0/Domain.pdb
+/Users/caziz/Desktop/demo/Reactivities/Domain/obj/Debug/net7.0/ref/Domain.dll
