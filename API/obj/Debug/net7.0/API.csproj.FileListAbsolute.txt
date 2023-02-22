@@ -74,3 +74,5 @@
 /Users/caziz/Desktop/demo/Reactivities/API/bin/Debug/net7.0/MediatR.dll
 /Users/caziz/Desktop/demo/Reactivities/API/bin/Debug/net7.0/MediatR.Contracts.dll
 /Users/caziz/Desktop/demo/Reactivities/API/bin/Debug/net7.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
+/Users/caziz/Desktop/demo/Reactivities/API/bin/Debug/net7.0/AutoMapper.dll
+/Users/caziz/Desktop/demo/Reactivities/API/bin/Debug/net7.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
