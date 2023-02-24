@@ -12,7 +12,7 @@ export default function ActivityList({activities, selectActivity, deleteActivity
     return (
         <Segment>
             <Item.Group divided>
-                {activities.map(activity => (
+                {activities?.map(activity => (
                     <Item key={activity.id}>
                         <Item.Content>
                             <Item.Header as='a'>{activity.title}</Item.Header>
