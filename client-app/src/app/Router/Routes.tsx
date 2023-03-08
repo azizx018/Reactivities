@@ -8,12 +8,13 @@ import App from "../layout/App";
 export const routes: RouteObject[] = [
     {
         path: '/',
-        element:<App/>,
+        element:<App />,
         children: [
             {path: '', element: <HomePage/>},
             {path: 'activities', element: <ActivityDashboard/>},
             {path: 'activities/:id', element: <ActivityDetails/>},
-            {path: 'createActivity', element: <ActivityForm/>}
+            {path: 'createActivity', element: <ActivityForm key='create'/>},
+            {path: 'manage/:id', element: <ActivityForm key='manage'/>}
         ]
     }
 

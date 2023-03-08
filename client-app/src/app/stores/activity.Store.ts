@@ -5,10 +5,10 @@ import { v4 as uuid } from "uuid";
 
 export default class ActivityStore {
     activityRegistry = new Map<string, Activity>();
-    selectedActivity: Activity | undefined = undefined;
+    selectedActivity?: Activity = undefined;
     editMode = false;
     loading = false;
-    loadingInitial = true;
+    loadingInitial = false;
 
     constructor() {
         makeAutoObservable(this)
@@ -29,33 +29,56 @@ export default class ActivityStore {
                 this.setLoadingInitital(false);             
         } catch (error) {
             console.log(error);
-            this.setLoadingInitital(false);
-            
-        
+            this.setLoadingInitital(false);  
     }
 }
 
     loadActivity = async (id: string) => {
         let activity = this.getActivity(id);
-        if (activity) this.selectedActivity = activity;
-        else {
+        if (activity) {
+            this.selectedActivity = activity;
+            return activity;
+        }
+        else{
             this.setLoadingInitital(true);
             try {
                 activity = await agent.Activities.details(id);
                 this.setActivity(activity);
-                this.selectedActivity = activity;
+                runInAction(() => {this.selectedActivity = activity});
                 this.setLoadingInitital(false);
+                return activity;
             } catch (error) {
                 console.log(error);
                 this.setLoadingInitital(false);
-                
             }
         }
     }
 
+    // loadActivity = async (id: string) => {
+    //     let activity = this.getActivity(id);
+    //     if (activity) {
+    //         this.selectedActivity = activity;
+    //         return activity;
+    //     }
+    //     else {
+    //         this.setLoadingInitital(true);
+    //         try {
+    //             activity = await agent.Activities.details(id);
+    //             this.setActivity(activity);
+    //             runInAction(() => this.selectedActivity = activity);
+    //             this.setLoadingInitital(false);
+    //             return activity;
+    //         } catch (error) {
+    //             console.log(error);
+    //             this.setLoadingInitital(false);
+                
+    //         }
+    //     }
+    // }
+
     private setActivity = (activity: Activity) => {
         activity.date = activity.date.split('T')[0];
-                    this.activityRegistry.set(activity.id, activity);
+        this.activityRegistry.set(activity.id, activity);
 
     }
 
@@ -88,7 +111,7 @@ export default class ActivityStore {
         }
     }
 
-    updateActivity =async (activity:Activity) => {
+    updateActivity = async (activity:Activity) => {
         this.loading = true;
         try {
             await agent.Activities.update(activity);
@@ -121,7 +144,6 @@ export default class ActivityStore {
             runInAction(() => {
                 this.loading = false;
             })
-            
         }
     }
 }
