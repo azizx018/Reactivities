@@ -19,8 +19,20 @@ export default class ActivityStore {
         Date.parse(a.date) - Date.parse(b.date));
     }
 
+    get groupedActivities() {
+        return Object.entries(
+            this.activitesByDate.reduce((activities, activity) => {
+                const date = activity.date;
+                activities[date] = activities[date] ? [...activities[date], activity] : [activity];
+                return activities;
+            }, {} as {[key: string]: Activity[]})
+
+        )
+    }
+
     loadActivities = async () => {
         this.setLoadingInitital(true);
+       
         try {
             const activities = await agent.Activities.list();
             activities.forEach(activity => {
@@ -53,29 +65,6 @@ export default class ActivityStore {
             }
         }
     }
-
-    // loadActivity = async (id: string) => {
-    //     let activity = this.getActivity(id);
-    //     if (activity) {
-    //         this.selectedActivity = activity;
-    //         return activity;
-    //     }
-    //     else {
-    //         this.setLoadingInitital(true);
-    //         try {
-    //             activity = await agent.Activities.details(id);
-    //             this.setActivity(activity);
-    //             runInAction(() => this.selectedActivity = activity);
-    //             this.setLoadingInitital(false);
-    //             return activity;
-    //         } catch (error) {
-    //             console.log(error);
-    //             this.setLoadingInitital(false);
-                
-    //         }
-    //     }
-    // }
-
     private setActivity = (activity: Activity) => {
         activity.date = activity.date.split('T')[0];
         this.activityRegistry.set(activity.id, activity);
