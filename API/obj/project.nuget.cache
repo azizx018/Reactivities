@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "/fYrU4d/xR0y0/X10kX1OW5DkpL2fI/9jpiPeeyu3kJAn1+keKWdoNv2wFWeYi0bPYutA0Zz/cpeCGMBSaH3NA==",
+  "dgSpecHash": "SlxZbimxox0XBDwVA/+c8ynnA52am2gUbaGRyiGMUaHOfBkGBPpUE5t3w3YtNnP51WBoeq5o5eJdlsd8LZjD5w==",
   "success": true,
   "projectFilePath": "/Users/caziz/Desktop/demo/Reactivities/API/API.csproj",
   "expectedPackageFiles": [
     "/Users/caziz/.nuget/packages/automapper/12.0.0/automapper.12.0.0.nupkg.sha512",
     "/Users/caziz/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.0/automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
+    "/Users/caziz/.nuget/packages/fluentvalidation/11.2.1/fluentvalidation.11.2.1.nupkg.sha512",
+    "/Users/caziz/.nuget/packages/fluentvalidation.aspnetcore/11.2.2/fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "/Users/caziz/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.2.1/fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "/Users/caziz/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/caziz/.nuget/packages/mediatr/11.0.0/mediatr.11.0.0.nupkg.sha512",
     "/Users/caziz/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
