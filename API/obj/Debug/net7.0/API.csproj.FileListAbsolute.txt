@@ -79,3 +79,9 @@
 /Users/caziz/Desktop/demo/Reactivities/API/bin/Debug/net7.0/FluentValidation.dll
 /Users/caziz/Desktop/demo/Reactivities/API/bin/Debug/net7.0/FluentValidation.AspNetCore.dll
 /Users/caziz/Desktop/demo/Reactivities/API/bin/Debug/net7.0/FluentValidation.DependencyInjectionExtensions.dll
+/Users/caziz/Desktop/demo/Reactivities/API/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/caziz/Desktop/demo/Reactivities/API/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/caziz/Desktop/demo/Reactivities/API/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/caziz/Desktop/demo/Reactivities/API/bin/Debug/net7.0/Microsoft.Extensions.Identity.Core.dll
+/Users/caziz/Desktop/demo/Reactivities/API/bin/Debug/net7.0/Microsoft.Extensions.Identity.Stores.dll
+/Users/caziz/Desktop/demo/Reactivities/API/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
