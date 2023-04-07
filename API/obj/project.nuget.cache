@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "J05lDu6FqB/WlJqzBj5Y4S44UdJEYUsFHCsIV7xZxeMKyU3qzI08wEPAg40LGSz16U6MlONZ3cOhCBEDVqdx+A==",
+  "dgSpecHash": "VwRPG7mZ9ZAaFZWKUBId4Pg5bzB9bSgKs+rtu/aZK+9lMZ03c+xDflWCyAlvUiE1ABclLNBX7tvHkF4kZHneQA==",
   "success": true,
   "projectFilePath": "/Users/caziz/Desktop/demo/Reactivities/API/API.csproj",
   "expectedPackageFiles": [
@@ -39,6 +39,12 @@
     "/Users/caziz/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "/Users/caziz/.nuget/packages/microsoft.extensions.options/7.0.1/microsoft.extensions.options.7.0.1.nupkg.sha512",
     "/Users/caziz/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "/Users/caziz/.nuget/packages/microsoft.identitymodel.abstractions/6.28.1/microsoft.identitymodel.abstractions.6.28.1.nupkg.sha512",
+    "/Users/caziz/.nuget/packages/microsoft.identitymodel.jsonwebtokens/6.28.1/microsoft.identitymodel.jsonwebtokens.6.28.1.nupkg.sha512",
+    "/Users/caziz/.nuget/packages/microsoft.identitymodel.logging/6.28.1/microsoft.identitymodel.logging.6.28.1.nupkg.sha512",
+    "/Users/caziz/.nuget/packages/microsoft.identitymodel.tokens/6.28.1/microsoft.identitymodel.tokens.6.28.1.nupkg.sha512",
+    "/Users/caziz/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/caziz/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "/Users/caziz/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
     "/Users/caziz/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
     "/Users/caziz/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.2/sqlitepclraw.bundle_e_sqlite3.2.1.2.nupkg.sha512",
@@ -50,7 +56,11 @@
     "/Users/caziz/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
     "/Users/caziz/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
     "/Users/caziz/.nuget/packages/system.codedom/4.4.0/system.codedom.4.4.0.nupkg.sha512",
+    "/Users/caziz/.nuget/packages/system.identitymodel.tokens.jwt/6.28.1/system.identitymodel.tokens.jwt.6.28.1.nupkg.sha512",
     "/Users/caziz/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
+    "/Users/caziz/.nuget/packages/system.runtime/4.3.0/system.runtime.4.3.0.nupkg.sha512",
+    "/Users/caziz/.nuget/packages/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg.sha512",
+    "/Users/caziz/.nuget/packages/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg.sha512",
     "/Users/caziz/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
     "/Users/caziz/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512"
   ],

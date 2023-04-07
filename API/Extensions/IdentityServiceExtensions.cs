@@ -1,3 +1,4 @@
+using API.Services;
 using Domain;
 using Persistence;
 
@@ -14,6 +15,8 @@ namespace API.Extensions
             .AddEntityFrameworkStores<DataContext>();
 
             services.AddAuthentication();
+            //when we create a service ourselves we use add scoped
+            services.AddScoped<TokenService>();
             return services;
         }
     }
