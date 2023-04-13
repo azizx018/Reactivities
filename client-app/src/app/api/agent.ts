@@ -3,9 +3,8 @@ import { Activity } from "../models/activity";
 import { toast} from 'react-toastify';
 import { router } from "../Router/Routes";
 import { store } from "../stores/store";
-import { config } from "process";
 import { User, UserFormValues } from "../models/user";
-import LoginForm from "../../features/users/LoginForm";
+import { config } from "process";
 
 const sleep = (delay: number) => {
     return new Promise((resolve) => {
@@ -14,6 +13,12 @@ const sleep = (delay: number) => {
 };
 
 axios.defaults.baseURL = 'http://localhost:5000/api';
+
+axios.interceptors.request.use(config => {
+    const token = store.commonStore.token;
+    if (token && config.headers) config.headers.Authorization = `Bearer ${token}`;
+    return config;
+})
 
 axios.interceptors.response.use(async response => {
         await sleep(1000);
